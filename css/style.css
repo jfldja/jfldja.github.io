@@ -10,6 +10,16 @@
     font-family: 'Spartan', sans-serif;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+    outline: none;
+}
+
+a:focus,a:active {
+    outline: none;
+}
+
 .logo {
     width: 200px;
     height: 150px;
