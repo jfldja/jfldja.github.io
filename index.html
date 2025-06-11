@@ -49,13 +49,23 @@
     </div>
   </section>
 
-  <section id="Hero">
-    <h4>配齊全套裝備，迎戰任務挑戰</h4>
-    <h2>精選戰術裝備補給</h2>
-    <h1>Quantum Arsenal 虛擬裝備專區</h1>
-    <p>最高享 80% 模擬平台折扣，限時入庫！</p>
-    <a href="pages/product.html"><button>查看裝備</button></a>
+  <section id="hero-slider">
+    <div class="hero-slide active" style="background-image: url('/img/feature product/home1.png');">
+      <h4>配齊全套裝備，迎戰任務挑戰</h4>
+      <h2>精選戰術裝備補給</h2>
+      <h1>Quantum Arsenal 虛擬裝備專區</h1>
+      <p>最高享 80% 模擬平台折扣，限時入庫！</p>
+      <a href="pages/product.html"><button>查看裝備</button></a>
+    </div>
+    <div class="hero-slide" style="background-image: url('/img/picarea/nnn.png');">
+      <h4>即將推出</h4>
+      <h2>最新戰術裝備補給</h2>
+      <h1>Quantum Arsenal 虛擬裝備專區</h1>
+      <p>趕緊預購</p>
+      <a href="pages/sproduct.html"><button>手刀預購</button></a>
+    </div>
   </section>
+
 
   <section id="product1" class="section-p1">
     <h2>熱門裝備</h2>
@@ -157,5 +167,21 @@
       <p>@2025 Quantum Arsenal</p>
     </div>
   </footer>
+      <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.hero-slide');
+
+        function showSlide(index) {
+          slides.forEach((slide, i) => {
+            slide.classList.remove('active');
+          });
+          slides[index].classList.add('active');
+        }
+
+        setInterval(() => {
+          currentSlide = (currentSlide + 1) % slides.length;
+          showSlide(currentSlide);
+        }, 4000);
+     </script>
 </body>
 </html>
