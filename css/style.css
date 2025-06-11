@@ -138,7 +138,7 @@ body {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    text-align: left; 
+    text-align: left;
     transition: opacity 1s ease;
     box-sizing: border-box;
 }
@@ -151,19 +151,19 @@ body {
     padding-bottom: 15px;
     font-size: 16px;
     color: #ffffff;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 3);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
 
 .hero-slide h2 {
     font-size: 36px;
     color: #ffffff;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 3);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
 
 .hero-slide h1 {
     font-size: 48px;
     color: #088178;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 3);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
 
 .hero-slide p {
@@ -171,11 +171,11 @@ body {
     margin: 15px 0 20px 0;
     color: #ffffff;
     max-width: 90%;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 3);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
 
-.hero-slide button {
-    background-color:#f8faf9;
+.hero-slide a.hero-btn{
+    background-color: #ffffff;
     color: #088178;
     border: 2px solid #ffffff1e;
     padding: 14px 30px;
@@ -188,14 +188,16 @@ body {
     transition: 0.3s;
     text-align: center;
     display: inline-block;
-    align-self: flex-end; 
+    align-self: flex-end;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    border-radius: 4px;
 }
 
-.hero-slide button:hover {
+.hero-slide a.hero-btn:hover {
     background-color: #088178;
-    color: #fff;
+    color: #ffffff;
 }
 
 
@@ -960,32 +962,39 @@ td .fa-circle-xmark:hover {
 }
 
 @media (max-width: 768px) {
-    .hero-slide {
-        align-items: center;
-        text-align: center;
-        background-size: contain;
-        background-position: center top;
-        background-repeat: no-repeat;
-    }
+  .hero-slide {
+      align-items: center;
+      text-align: center;
+      background-size: cover; /* 比 contain 更適合滿版展示 */
+      background-position: center;
+      background-repeat: no-repeat;
+      padding: 0 8%;
+  }
 
-    .hero-slide button {
-        align-self: center;
-        width: 100%;
-        max-width: 280px;
-        padding: 14px 20px;
-    }
+  .hero-slide h1 {
+      font-size: 32px;
+  }
 
-    .hero-slide h2 {
-        font-size: 28px;
-    }
+  .hero-slide h2 {
+      font-size: 22px;
+  }
 
-    .hero-slide h1 {
-        font-size: 36px;
-    }
+  .hero-slide h4 {
+      font-size: 14px;
+  }
 
-    .hero-slide p {
-        font-size: 14px;
-    }
+  .hero-slide p {
+      font-size: 14px;
+      max-width: 100%;
+  }
+
+  .hero-slide button {
+      align-self: center;
+      width: 90%;
+      max-width: 280px;
+      padding: 12px 20px;
+      font-size: 15px;
+  }
 
   #product1 .pro {
     width: 100%;
