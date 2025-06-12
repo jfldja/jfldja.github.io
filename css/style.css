@@ -965,7 +965,7 @@ td .fa-circle-xmark:hover {
   .hero-slide {
       align-items: center;
       text-align: center;
-      background-size: cover; /* 比 contain 更適合滿版展示 */
+      background-size: cover; 
       background-position: center;
       background-repeat: no-repeat;
       padding: 0 8%;
@@ -1029,31 +1029,129 @@ td .fa-circle-xmark:hover {
 
 @media (max-width: 480px) {
   h1 {
-    font-size: 32px;
-  }
-  h2 {
     font-size: 28px;
   }
-  h4, h6 {
-    font-size: 18px;
+
+  h2 {
+    font-size: 24px;
   }
+
+  h4, h6 {
+    font-size: 16px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
   #navbar {
     flex-direction: column;
+    padding: 10px;
   }
+
   #navbar li {
-    padding: 10px 0;
+    padding: 8px 0;
   }
+
+  #header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 20px;
+  }
+
+  .logo {
+    width: 150px;
+    height: auto;
+  }
+
+  #hero-slider {
+    height: 80vh;
+  }
+
+  .hero-slide {
+    align-items: center;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    padding: 0 5%;
+  }
+
+  .hero-slide h1 {
+    font-size: 24px;
+  }
+
+  .hero-slide h2 {
+    font-size: 20px;
+  }
+
+  .hero-slide h4 {
+    font-size: 12px;
+  }
+
+  .hero-slide p {
+    font-size: 13px;
+    max-width: 100%;
+  }
+
+  .hero-slide button {
+    align-self: center;
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 14px;
+  }
+
+  #product1 .pro {
+    width: 100%;
+  }
+
+  #newsletter {
+    padding: 10px;
+  }
+
+  #newsletter h4,
+  #newsletter p {
+    margin: 10px 0;
+    text-align: center;
+    font-size: 14px;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .cpr {
+    margin-top: 20px;
+    font-size: 12px;
+  }
+
+  #cart table {
+    font-size: 12px;
+    word-break: break-word;
+  }
+
   #cart table td img {
-    width: 50px;
-  }
-  #cart table td:nth-child(5) input {
     width: 40px;
   }
+
+  #cart table td:nth-child(5) input {
+    width: 30px;
+  }
+
   #people {
     flex-direction: column;
     align-items: center;
+    gap: 10px;
   }
+
   #people div {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+  }
+
+  #people img {
+    width: 80px;
+    height: 80px;
   }
 }
