@@ -10,6 +10,11 @@
     font-family: 'Spartan', sans-serif;
 }
 
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 a {
     text-decoration: none;
     color: inherit;
@@ -80,7 +85,6 @@ body {
     position: sticky;
     top: 0;
     left: 0;
-
 }
 
 #navbar {
@@ -963,37 +967,37 @@ td .fa-circle-xmark:hover {
 
 @media (max-width: 768px) {
   .hero-slide {
-      align-items: center;
-      text-align: center;
-      background-size: cover; 
-      background-position: center;
-      background-repeat: no-repeat;
-      padding: 0 8%;
+    align-items: center;
+    text-align: center;
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 0 8%;
   }
 
   .hero-slide h1 {
-      font-size: 32px;
+    font-size: 32px;
   }
 
   .hero-slide h2 {
-      font-size: 22px;
+    font-size: 22px;
   }
 
   .hero-slide h4 {
-      font-size: 14px;
+    font-size: 14px;
   }
 
   .hero-slide p {
-      font-size: 14px;
-      max-width: 100%;
+    font-size: 14px;
+    max-width: 100%;
   }
 
   .hero-slide button {
-      align-self: center;
-      width: 90%;
-      max-width: 280px;
-      padding: 12px 20px;
-      font-size: 15px;
+    align-self: center;
+    width: 90%;
+    max-width: 280px;
+    padding: 12px 20px;
+    font-size: 15px;
   }
 
   #product1 .pro {
@@ -1044,19 +1048,26 @@ td .fa-circle-xmark:hover {
     font-size: 14px;
   }
 
+  #header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 10px 20px;
+    width: 100%;
+    box-sizing: border-box;
+    background: rgb(226, 226, 226);
+  }
+
   #navbar {
     flex-direction: column;
-    padding: 10px;
+    align-items: flex-start;
+    width: 100%;
   }
 
   #navbar li {
-    padding: 8px 0;
-  }
-
-  #header {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 10px 20px;
+    width: 100%;
+    padding: 10px 0;
   }
 
   .logo {
